@@ -1,0 +1,21 @@
+{
+    "name": "templates",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "tailwind": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch",
+        "finalcss": "npx tailwindcss -i ./src/css/input.css -o ./public/css/final.css --watch",
+        "compress": "npx tailwindcss -i ./src/css/input.css -o ./public/css/final.css --minify",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "postcss": "^8.4.34",
+        "prettier-plugin-tailwindcss": "^0.5.11",
+        "tailwindcss": "^3.4.1"
+    }
+}
