@@ -36,6 +36,13 @@
             href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
         />
 
+        <!-- Data AOS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/aos@next/dist/aos.css"
+        />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
         <script>
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.add('dark');
@@ -167,7 +174,10 @@
 
                     <!-- Hero Image -->
                     <div class="w-full self-end px-4 lg:w-1/2">
-                        <div class="mt-10 lg:mt-0 lg:right-0 relative">
+                        <div
+                            class="mt-10 lg:mt-0 lg:right-0 relative"
+                            data-aos="zoom-in"
+                        >
                             <img
                                 src="public/assets/img/Profile-vr.png"
                                 alt="Profile"
@@ -202,7 +212,10 @@
             <div class="container">
                 <div class="flex flex-wrap">
                     <!-- Element 2 -->
-                    <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <div
+                        class="w-full px-4 mb-10 lg:w-1/2"
+                        data-aos="fade-right"
+                    >
                         <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
                         <p class="font-medium text-base text-secondary max-w-xl lg:text-lg text-justify">
                             Seorang mahasiswa yang antusias dan bersemangat di semester 3 dengan minat yang kuat dalam teknologi, pengembangan web dan <i>artificial intelligence</i>. Saya memiliki dedikasi tinggi untuk memperluas
@@ -219,7 +232,10 @@
                         </div>
                     </div>
 
-                    <div class="w-full px-4 lg:w-1/2">
+                    <div
+                        class="w-full px-4 lg:w-1/2"
+                        data-aos="fade-left"
+                    >
                         <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-10 text-primary">Sosial Media</h3>
                         <p class="font-medium text-base text-secondary mb-6 lg:text-lg text-justify">
                             Saya aktif dalam berbagai platform media sosial, di mana saya berbagi pengetahuan, pengalaman, dan ide-ide terbaru dalam teknologi. Ikuti saya di platform-platform berikut untuk tetap terhubung dan ikut serta
@@ -268,6 +284,320 @@
         </section>
         <!-- About Me -->
 
+        <!-- Skill -->
+        <section class="pt-24 pb-32 bg-dark dark:bg-slate-300">
+            <div class="container">
+                <!-- Penjelasan mengenai Skill -->
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h1 class="font-semibold text-lg text-primary mb-2">Skill</h1>
+                    <h2 class="font-bold text-3xl mb-4 text-white dark:text-dark">Kemampuan Yang Sudah Dipelajari</h2>
+                </div>
+
+                <div class="mt-24 grid grid-cols-2 md:grid-cols-4 md:p-4 gap-4" data-aos="fade-up">
+                    <!-- HTML -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    role="img"
+                                    width="60"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>HTML5</title>
+                                    <path
+                                        d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+                                        fill="#E34F26"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">HTML5</h1>
+                                <p class="font-medium text-slate-700">Intermediete</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    role="img"
+                                    width="60"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>CSS3</title>
+                                    <path
+                                        d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
+                                        fill="#1572B6"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">CSS3</h1>
+                                <p class="font-medium text-slate-700">Intermediete</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScripts -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    role="img"
+                                    width="60"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>JavaScript</title>
+                                    <path
+                                        d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                                        fill="#F7DF1E"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">JavaScripts</h1>
+                                <p class="font-medium text-slate-700">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TailwindCss -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="60"
+                                    height="64"
+                                >
+                                    <defs>
+                                        <linearGradient
+                                            x1="0"
+                                            y1="-21.333"
+                                            y2="85.333"
+                                            id="A"
+                                            x2="64"
+                                            gradientUnits="userSpaceOnUse"
+                                        >
+                                            <stop
+                                                stop-color="#2383ae"
+                                                offset="0%"
+                                            />
+                                            <stop
+                                                stop-color="#6dd7b9"
+                                                offset="100%"
+                                            />
+                                        </linearGradient>
+                                    </defs>
+                                    <path
+                                        d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z"
+                                        fill="url(#A)"
+                                        fill-rule="evenodd"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">TailwindCSS</h1>
+                                <p class="font-medium text-slate-700">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NODEJS -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    role="img"
+                                    width="60"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>Node.js</title>
+                                    <path
+                                        d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"
+                                        fill="#339933"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">NodeJS</h1>
+                                <p class="font-medium text-slate-700">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- React JS -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="60"
+                                    height="60"
+                                    viewBox="0 0 32 32"
+                                >
+                                    <g
+                                        transform="matrix(.05696 0 0 .05696 .647744 2.43826)"
+                                        fill="none"
+                                        fill-rule="evenodd"
+                                    >
+                                        <circle
+                                            r="50.167"
+                                            cy="237.628"
+                                            cx="269.529"
+                                            fill="#00d8ff"
+                                        />
+                                        <g
+                                            stroke="#00d8ff"
+                                            stroke-width="24"
+                                        >
+                                            <path
+                                                d="M269.53 135.628c67.356 0 129.928 9.665 177.107 25.907 56.844 19.57 91.794 49.233 91.794 76.093 0 27.99-37.04 59.503-98.083 79.728-46.15 15.29-106.88 23.272-170.818 23.272-65.554 0-127.63-7.492-174.3-23.44-59.046-20.182-94.61-52.103-94.61-79.56 0-26.642 33.37-56.076 89.415-75.616 47.355-16.51 111.472-26.384 179.486-26.384z"
+                                            />
+                                            <path
+                                                d="M180.736 186.922c33.65-58.348 73.28-107.724 110.92-140.48C337.006 6.976 380.163-8.48 403.43 4.937c24.248 13.983 33.042 61.814 20.067 124.796-9.8 47.618-33.234 104.212-65.176 159.6-32.75 56.788-70.25 106.82-107.377 139.272-46.98 41.068-92.4 55.93-116.185 42.213-23.08-13.3-31.906-56.92-20.834-115.233 9.355-49.27 32.832-109.745 66.8-168.664z"
+                                            />
+                                            <path
+                                                d="M180.82 289.482C147.075 231.2 124.1 172.195 114.51 123.227c-11.544-59-3.382-104.11 19.864-117.566 24.224-14.024 70.055 2.244 118.14 44.94 36.356 32.28 73.688 80.837 105.723 136.173 32.844 56.733 57.46 114.21 67.036 162.582 12.117 61.213 2.31 107.984-21.453 121.74-23.057 13.348-65.25-.784-110.24-39.5-38.013-32.71-78.682-83.253-112.76-142.115z"
+                                            />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">ReactJS</h1>
+                                <p class="font-medium text-slate-700">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="60"
+                                    height="60"
+                                    viewBox="0 0 32 32"
+                                >
+                                    <defs>
+                                        <linearGradient
+                                            id="A"
+                                            x1="811.527"
+                                            y1="574.895"
+                                            x2="665.255"
+                                            y2="573.732"
+                                            gradientUnits="userSpaceOnUse"
+                                        >
+                                            <stop
+                                                offset="0"
+                                                stop-color="#366a96"
+                                            />
+                                            <stop
+                                                offset="1"
+                                                stop-color="#3679b0"
+                                            />
+                                        </linearGradient>
+                                        <linearGradient
+                                            id="B"
+                                            x1="862.824"
+                                            y1="642.176"
+                                            x2="573.276"
+                                            y2="642.176"
+                                            gradientUnits="userSpaceOnUse"
+                                        >
+                                            <stop
+                                                offset="0"
+                                                stop-color="#ffc836"
+                                            />
+                                            <stop
+                                                offset="1"
+                                                stop-color="#ffe873"
+                                            />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="matrix(.1617 0 0 .158089 -107.53764 -81.66187)">
+                                        <path
+                                            d="M716.255 544.487c0-13.623 3.653-21.034 23.822-24.563 13.693-2.4 31.25-2.7 47.627 0 12.935 2.135 23.822 11.77 23.822 24.563v44.945c0 13.182-10.57 23.98-23.822 23.98h-47.627c-16.164 0-29.787 13.782-29.787 29.363v21.564h-16.376c-13.852 0-21.917-9.988-25.305-23.964-4.57-18.776-4.376-29.963 0-47.945 3.794-15.687 15.917-23.964 29.77-23.964h65.52v-6h-47.645v-17.98z"
+                                            fill="url(#A)"
+                                        />
+                                        <path
+                                            d="M811.527 688.32c0 13.623-11.823 20.523-23.822 23.964-18.052 5.188-32.54 4.394-47.627 0-12.6-3.67-23.822-11.17-23.822-23.964v-44.945c0-12.935 10.782-23.98 23.822-23.98h47.627c15.864 0 29.787-13.71 29.787-29.963v-20.964h17.858c13.87 0 20.4 10.305 23.822 23.964 4.764 18.97 4.976 33.157 0 47.945-4.817 14.364-9.97 23.964-23.822 23.964H763.9v6h47.627v17.98z"
+                                            fill="url(#B)"
+                                        />
+                                        <path
+                                            d="M728.166 541.505c0-4.976 3.988-9 8.93-9 4.923 0 8.93 4.023 8.93 9 0 4.96-4.006 8.982-8.93 8.982-4.94 0-8.93-4.023-8.93-8.982zm53.59 149.798c0-4.96 4.006-8.982 8.93-8.982 4.94 0 8.93 4.023 8.93 8.982 0 4.976-3.988 9-8.93 9-4.923 0-8.93-4.023-8.93-9z"
+                                            fill="#fff"
+                                        />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">Python</h1>
+                                <p class="font-medium text-slate-700">Intermediete</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- C -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    role="img"
+                                    width="60"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>C</title>
+                                    <path
+                                        d="M16.5921 9.1962s-.354-3.298-3.627-3.39c-3.2741-.09-4.9552 2.474-4.9552 6.14 0 3.6651 1.858 6.5972 5.0451 6.5972 3.184 0 3.5381-3.665 3.5381-3.665l6.1041.365s.36 3.31-2.196 5.836c-2.552 2.5241-5.6901 2.9371-7.8762 2.9201-2.19-.017-5.2261.034-8.1602-2.97-2.938-3.0101-3.436-5.9302-3.436-8.8002 0-2.8701.556-6.6702 4.047-9.5502C7.444.72 9.849 0 12.254 0c10.0422 0 10.7172 9.2602 10.7172 9.2602z"
+                                        fill="#A8B9CC"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">C</h1>
+                                <p class="font-medium text-slate-700">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arduino -->
+                    <div class="h-15 bg-slate-200 aspect-[4/2] rounded-lg shadow shadow-slate-200 dark:shadow-slate-400">
+                        <div class="flex justify-center">
+                            <div class="mt-5 mr-2 md:mt-8 md:mr-3">
+                                <svg
+                                    role="img"
+                                    width="60"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>Arduino</title>
+                                    <path
+                                        d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.49 6.49 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854zM6.53 15.734a3.837 3.837 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777.208 0 .416.017.624.043 2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734zm11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734.208-.026.416-.043.624-.043 2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777zm1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183h1.206zM4.246 12.498H7.82v-1.125H4.245v1.125z"
+                                        fill="#00878F"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="mt-6 md:mt-9">
+                                <h1 class="text-dark font-semibold text-xl">Arduino</h1>
+                                <p class="font-medium text-slate-700">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skill -->
+
         <!-- Gallery -->
         <section
             id="gallery"
@@ -283,7 +613,10 @@
                 </div>
 
                 <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                    <div class="mb-12 p-4 md:w-1/2">
+                    <div
+                        class="mb-12 p-4 md:w-1/2"
+                        data-aos="fade-up"
+                    >
                         <div class="rounded-md shadow-md overflow-hidden">
                             <img
                                 src="public/assets/blog/Sketch.png"
@@ -295,7 +628,10 @@
                         <p class="font-medium text-base text-secondary">Menggunakan Teknologi berbasis Internet of Things (IoT) untuk mempermudah pekerjaan sehari-hari dan solusi untuk penghematan sumber daya.</p>
                     </div>
 
-                    <div class="mb-12 p-4 md:w-1/2">
+                    <div
+                        class="mb-12 p-4 md:w-1/2"
+                        data-aos="fade-up"
+                    >
                         <div class="rounded-md shadow-md overflow-hidden">
                             <img
                                 src="public/assets/portfolio/Sensor.jpg"
@@ -327,7 +663,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap">
+                <div
+                    class="flex flex-wrap"
+                    data-aos="fade-up"
+                >
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-slate-200 rounded-xl shadow-lg overflow-hidden mb-10">
                             <img
@@ -490,7 +829,7 @@
                         <ul class="text-slate-300 dark:text-dark">
                             <li>
                                 <a
-                                    href="#"
+                                    href="#blog"
                                     class="inline-block text-base hover:text-primary mb-3 transition duration-300"
                                     >Programming</a
                                 >
@@ -498,7 +837,7 @@
 
                             <li>
                                 <a
-                                    href="#"
+                                    href="#blog"
                                     class="inline-block text-base hover:text-primary mb-3 transition duration-300"
                                     >Technology</a
                                 >
@@ -614,5 +953,10 @@
         </footer>
         <!-- Footer  -->
         <script src="public/js/scripts.js"></script>
+
+        <!-- Data Aos -->
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

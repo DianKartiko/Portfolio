@@ -13,6 +13,7 @@ module.exports = {
                 dark: '#0f172a',
                 hover: '#2dd4bf',
                 secondary: '#64748b',
+                html : '#FF5733'
             },
             screen: {
                 '2xl': '1320px',
